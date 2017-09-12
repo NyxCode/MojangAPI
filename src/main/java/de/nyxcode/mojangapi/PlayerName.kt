@@ -1,5 +1,14 @@
 package de.nyxcode.mojangapi
 
+/**
+ * The name of a player and the data on which it was chosen.
+ * If this is the first name of the player, [changedToAt] will be null.
+ */
+/*
+ I am not using the 'data' modifier here because the Kotlin compiler generates 'componentN()'
+ functions useful for the destructuring deceleration which would be irritating when using this library from Java.
+ https://discuss.kotlinlang.org/t/disable-destructuring-declarations/4560
+*/
 class PlayerName(val name: String, val changedToAt: Long?) {
     override fun toString(): String {
         return "PlayerName(name='$name', changedToAt=$changedToAt)"

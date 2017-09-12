@@ -2,6 +2,14 @@ package de.nyxcode.mojangapi
 
 import java.util.*
 
+/**
+ * The 'Profile' of a player.
+ */
+/*
+ I am not using the 'data' modifier here because the Kotlin compiler generates 'componentN()'
+ functions useful for the destructuring deceleration which would be irritating when using this library from Java.
+ https://discuss.kotlinlang.org/t/disable-destructuring-declarations/4560
+*/
 class PlayerProfile(val id: UUID,
                     val name: String,
                     val skinUrl: String?,
