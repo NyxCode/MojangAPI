@@ -82,9 +82,10 @@ public interface MojangAPI extends Closeable {
 
     /**
      * Looks up the current name of the player identified by the given {@link UUID}.
+     *
      * @param uuid the players unique ID
      * @return the players name
-     * @throws PlayerNotFoundException If no player with the given ID was found
+     * @throws PlayerNotFoundException  If no player with the given ID was found
      * @throws InvalidResponseException If the API endpoint responded with an invalid response
      * @throws TooManyRequestsException If the API endpoints rate limit is reached
      */
@@ -93,6 +94,7 @@ public interface MojangAPI extends Closeable {
 
     /**
      * Looks up the current name of the player identified by the given {@link UUID}.
+     *
      * @param uuid the players unique ID
      * @return the players name, or {@code null} if the player was not found
      * @throws InvalidResponseException If the API endpoint responded with an invalid response
@@ -103,9 +105,10 @@ public interface MojangAPI extends Closeable {
 
     /**
      * Returns all names the player with the given {@link UUID} ever had
+     *
      * @param uuid the players unique ID
      * @return the players names
-     * @throws PlayerNotFoundException If no player with the given ID was found
+     * @throws PlayerNotFoundException  If no player with the given ID was found
      * @throws InvalidResponseException If the API endpoint responded with an invalid response
      * @throws TooManyRequestsException If the API endpoints rate limit is reached
      */
@@ -114,6 +117,7 @@ public interface MojangAPI extends Closeable {
 
     /**
      * Returns all names the player with the given {@link UUID} ever had
+     *
      * @param uuid the players unique ID
      * @return the players names, or {@code null} if the player was not found
      * @throws InvalidResponseException If the API endpoint responded with an invalid response
@@ -124,9 +128,10 @@ public interface MojangAPI extends Closeable {
 
     /**
      * Returns the unique ID the player with the given name
+     *
      * @param name the players name
      * @return the players unique ID
-     * @throws PlayerNotFoundException If no player with the given name was found
+     * @throws PlayerNotFoundException  If no player with the given name was found
      * @throws InvalidResponseException If the API endpoint responded with an invalid response
      * @throws TooManyRequestsException If the API endpoints rate limit is reached
      */
@@ -135,6 +140,7 @@ public interface MojangAPI extends Closeable {
 
     /**
      * Returns the unique ID the player with the given name
+     *
      * @param name the players name
      * @return the players unique ID, or {@code null} if the player was not found
      * @throws InvalidResponseException If the API endpoint responded with an invalid response
@@ -145,9 +151,10 @@ public interface MojangAPI extends Closeable {
 
     /**
      * Returns the profile of the player with the given {@link UUID}
+     *
      * @param id the players unique ID
      * @return the players profile
-     * @throws PlayerNotFoundException If no player with the given id was found
+     * @throws PlayerNotFoundException  If no player with the given id was found
      * @throws InvalidResponseException If the API endpoint responded with an invalid response
      * @throws TooManyRequestsException If the API endpoints rate limit is reached
      */
@@ -156,6 +163,7 @@ public interface MojangAPI extends Closeable {
 
     /**
      * Returns the profile of the player with the given {@link UUID}
+     *
      * @param id the players unique ID
      * @return the players profile, or {@code null} if the player was not found
      * @throws InvalidResponseException If the API endpoint responded with an invalid response
